@@ -27,6 +27,7 @@ module.exports = {
   siteMetadata: {
     title: `Blake Green`,
     description: `Cloud Architect`,
+    siteUrl: `https://blakegreen.dev`,
     author: `@tsgt_green`
   },
   plugins: [
