@@ -1,13 +1,3 @@
-  <!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
-  <p align="center">
-    <a href="https://rg-portfolio.netlify.com/">
-      <img alt="rg-portfolio" src="https://github.com/rohitguptab/rg-portfolio/blob/master/src/images/fev_icon.png" width="50" />
-    </a>
-  </p>
-  <h1 align="center">
-    RG-Portfolio
-  </h1>
-  <img src="https://github.com/rohitguptab/rg-portfolio/blob/master/docs/screenshot.jpg" />
 
 Kick-off your Portfolio website with RG-Portfolio gatsby starter. We have used [Gatsby](https://www.gatsbyjs.org/) + [Contenful](https://www.gatsbyjs.org/packages/gatsby-source-contentful/?=Contenful).
 
@@ -33,7 +23,7 @@ https://rg-portfolio.netlify.com/
 
     ```sh
     # Clone this Repositories
-    gatsby new rg-portfolio https://github.com/Rohitguptab/rg-portfolio.git
+    gatsby new portfolio https://github.com/bgreengo/blakegreen-dev.git
     ```
 
 1.  **Setup Contentful Models**
@@ -53,7 +43,7 @@ https://rg-portfolio.netlify.com/
     Navigate into your new site’s directory and start it up.
 
     ```sh
-    cd rg-portfolio
+    cd blakegreen-dev
     npm install
     gatsby develop
     ```
@@ -64,8 +54,8 @@ https://rg-portfolio.netlify.com/
 
     [ContentFul](https://be.contentful.com/login):
 
-    - spaceId = **Key**
-    - accessToken = **Key**
+    - spaceId: **Key**
+    - accessToken: **Key**
 
 1.  **Open the source code and start editing!**
 

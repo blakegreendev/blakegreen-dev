@@ -8,9 +8,9 @@ const { spaceId, accessToken } = process.env;
 
 module.exports = {
   siteMetadata: {
-    title: `Rohit Gupta`,
-    description: `Personal Site`,
-    author: `@rohitguptab`
+    title: `Blake Green`,
+    description: `Cloud Architect`,
+    author: `@tsgt_green`
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -24,8 +24,8 @@ module.exports = {
     {
       resolve: "gatsby-source-contentful",
       options: {
-        spaceId,
-        accessToken
+        spaceId: `chprka9u25r7`,
+        accessToken: `akTLSr8UelkrDBxn4yz-vQle53VwzriQ4fLQFr4BPSo`
       }
     },
     `gatsby-transformer-sharp`,
@@ -34,12 +34,12 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Rohit Gupta`,
-        short_name: `Rohit Gupta`,
+        name: `Blake Green`,
+        short_name: `Blake Green`,
         start_url: `/`,
         background_color: `#663399`,
         theme_color: `#333`,
-        icon: `src/images/fev_icon.png` // This path is relative to the root of the site.
+        icon: `src/images/mylogo2.png` // This path is relative to the root of the site.
       }
     }, // To learn more, visit: https://gatsby.dev/offline // this (optional) plugin enables Progressive Web App + Offline functionality
     `gatsby-plugin-offline`

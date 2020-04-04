@@ -1967,10 +1967,10 @@
       },
       "fields": {
         "siteName": {
-          "en-US": "Rohit Gupta"
+          "en-US": "Blake Green"
         },
         "siteUrl": {
-          "en-US": "https://rg-portfolio.netlify.com"
+          "en-US": "https://blakegreen.dev"
         },
         "logo": {
           "en-US": {
@@ -1982,7 +1982,7 @@
           }
         },
         "twiteerHandle": {
-          "en-US": "@rohitguptab"
+          "en-US": "@tsgt_green"
         },
         "siteDescription": {
           "en-US": "Personal Site"
@@ -3013,7 +3013,7 @@
       },
       "fields": {
         "name": {
-          "en-US": "Rohit Gupta"
+          "en-US": "Blake Green"
         },
         "designation": {
           "en-US": "Front-end Developer"
@@ -3092,73 +3092,6 @@
             "id": "4bwt4pzmqo4p"
           }
         },
-        "id": "5053xqiD6rGY5Z3xDASnAo",
-        "type": "Asset",
-        "createdAt": "2020-02-18T07:39:53.196Z",
-        "updatedAt": "2020-02-18T07:40:35.798Z",
-        "environment": {
-          "sys": {
-            "id": "master",
-            "type": "Link",
-            "linkType": "Environment"
-          }
-        },
-        "publishedVersion": 3,
-        "publishedAt": "2020-02-18T07:40:35.798Z",
-        "firstPublishedAt": "2020-02-18T07:40:35.798Z",
-        "createdBy": {
-          "sys": {
-            "type": "Link",
-            "linkType": "User",
-            "id": "4Mscy9eAqHKGabWpFykEav"
-          }
-        },
-        "updatedBy": {
-          "sys": {
-            "type": "Link",
-            "linkType": "User",
-            "id": "4Mscy9eAqHKGabWpFykEav"
-          }
-        },
-        "publishedCounter": 1,
-        "version": 4,
-        "publishedBy": {
-          "sys": {
-            "type": "Link",
-            "linkType": "User",
-            "id": "4Mscy9eAqHKGabWpFykEav"
-          }
-        }
-      },
-      "fields": {
-        "title": {
-          "en-US": "rohitgupta-full"
-        },
-        "file": {
-          "en-US": {
-            "url": "//images.ctfassets.net/4bwt4pzmqo4p/5053xqiD6rGY5Z3xDASnAo/3f619b4c00f7c31bcd9f584155f5fb72/rohitgupta-full.jpg",
-            "details": {
-              "size": 25660,
-              "image": {
-                "width": 375,
-                "height": 745
-              }
-            },
-            "fileName": "rohitgupta-full.jpg",
-            "contentType": "image/jpeg"
-          }
-        }
-      }
-    },
-    {
-      "sys": {
-        "space": {
-          "sys": {
-            "type": "Link",
-            "linkType": "Space",
-            "id": "4bwt4pzmqo4p"
-          }
-        },
         "id": "48G4Y9AtIb3gNFex4yAE9N",
         "type": "Asset",
         "createdAt": "2020-02-18T07:41:03.375Z",
@@ -3213,140 +3146,6 @@
             },
             "fileName": "safar-safarov-MSN8TFhJ0is-unsplash.webp",
             "contentType": "image/webp"
-          }
-        }
-      }
-    },
-    {
-      "sys": {
-        "space": {
-          "sys": {
-            "type": "Link",
-            "linkType": "Space",
-            "id": "4bwt4pzmqo4p"
-          }
-        },
-        "id": "4yXZnfglqynUp9M1BwYzGy",
-        "type": "Asset",
-        "createdAt": "2020-02-18T07:43:54.824Z",
-        "updatedAt": "2020-02-18T07:44:28.392Z",
-        "environment": {
-          "sys": {
-            "id": "master",
-            "type": "Link",
-            "linkType": "Environment"
-          }
-        },
-        "publishedVersion": 3,
-        "publishedAt": "2020-02-18T07:44:28.392Z",
-        "firstPublishedAt": "2020-02-18T07:44:28.392Z",
-        "createdBy": {
-          "sys": {
-            "type": "Link",
-            "linkType": "User",
-            "id": "4Mscy9eAqHKGabWpFykEav"
-          }
-        },
-        "updatedBy": {
-          "sys": {
-            "type": "Link",
-            "linkType": "User",
-            "id": "4Mscy9eAqHKGabWpFykEav"
-          }
-        },
-        "publishedCounter": 1,
-        "version": 4,
-        "publishedBy": {
-          "sys": {
-            "type": "Link",
-            "linkType": "User",
-            "id": "4Mscy9eAqHKGabWpFykEav"
-          }
-        }
-      },
-      "fields": {
-        "title": {
-          "en-US": "rohitgupta"
-        },
-        "file": {
-          "en-US": {
-            "url": "//images.ctfassets.net/4bwt4pzmqo4p/4yXZnfglqynUp9M1BwYzGy/de523284336453dca7abdcf7ad39482b/rohitgupta.jpg",
-            "details": {
-              "size": 1762810,
-              "image": {
-                "width": 2176,
-                "height": 2176
-              }
-            },
-            "fileName": "rohitgupta.jpg",
-            "contentType": "image/jpeg"
-          }
-        }
-      }
-    },
-    {
-      "sys": {
-        "space": {
-          "sys": {
-            "type": "Link",
-            "linkType": "Space",
-            "id": "4bwt4pzmqo4p"
-          }
-        },
-        "id": "7yHuAa09NVOcZ25POk7cbM",
-        "type": "Asset",
-        "createdAt": "2020-02-18T12:44:13.025Z",
-        "updatedAt": "2020-02-18T12:45:49.096Z",
-        "environment": {
-          "sys": {
-            "id": "master",
-            "type": "Link",
-            "linkType": "Environment"
-          }
-        },
-        "publishedVersion": 3,
-        "publishedAt": "2020-02-18T12:45:49.096Z",
-        "firstPublishedAt": "2020-02-18T12:45:49.096Z",
-        "createdBy": {
-          "sys": {
-            "type": "Link",
-            "linkType": "User",
-            "id": "4Mscy9eAqHKGabWpFykEav"
-          }
-        },
-        "updatedBy": {
-          "sys": {
-            "type": "Link",
-            "linkType": "User",
-            "id": "4Mscy9eAqHKGabWpFykEav"
-          }
-        },
-        "publishedCounter": 1,
-        "version": 4,
-        "publishedBy": {
-          "sys": {
-            "type": "Link",
-            "linkType": "User",
-            "id": "4Mscy9eAqHKGabWpFykEav"
-          }
-        }
-      },
-      "fields": {
-        "title": {
-          "en-US": "rohitgupta-white"
-        },
-        "file": {
-          "en-US": {
-            "url": "//images.ctfassets.net/4bwt4pzmqo4p/7yHuAa09NVOcZ25POk7cbM/bc1930c39aba010b01a493082ba0bc99/rohitgupta-white.png",
-            "details": {
-              "size": 1741,
-              "image": {
-                "width": 49,
-                "height": 45
-              }
-            },
-            "fileName": "rohitgupta-white.png",
-            "contentType": "image/png"
           }
         }
       }
