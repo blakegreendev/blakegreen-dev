@@ -1,9 +1,14 @@
 
-Kick-off your Portfolio website with RG-Portfolio gatsby starter. We have used [Gatsby](https://www.gatsbyjs.org/) + [Contenful](https://www.gatsbyjs.org/packages/gatsby-source-contentful/?=Contenful).
+Kick-off your Portfolio website. We have used [Gatsby](https://www.gatsbyjs.org/) + [Contenful](https://www.gatsbyjs.org/packages/gatsby-source-contentful/?=Contenful).
+
+Pictures from:
+- https://unsplash.com/
+- https://www.pexels.com/
+
 
 ### Live Demo:
 
-https://rg-portfolio.netlify.com/
+https://blakegreen.dev
 
 ### Feature:
 
@@ -34,7 +39,7 @@ https://rg-portfolio.netlify.com/
     contentful space --space-id <CONTENTFUL_SPACE_ID> import --content-file contentful-data.json
     ```
     
-    Checkout my below blog how to Import and Export data from ContentFul
+    Checkout Rohit's below blog how to Import and Export data from ContentFul
     
     [https://rohitgupta.design/import-and-export-data-with-contentful-cli](https://rohitgupta.design/import-and-export-data-with-contentful-cli)
 
