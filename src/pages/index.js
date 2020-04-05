@@ -4,14 +4,29 @@ import { graphql } from "gatsby";
 import Layout from "../components/layout";
 import SEO from "../components/seo";
 
+import algoliasearch from "algoliasearch/lite"
+import {
+  InstantSearch,
+  SearchBox,
+  Hits,
+  Highlight,
+} from "react-instantsearch-dom"
+
 import Banner from "../components/banner";
 import About from "../components/about";
 import Service from "../components/service";
 import Work from "../components/work";
 import Blogs from "../components/blogs";
+import Search from "../components/search";
 import Testimonial from "../components/testimonial";
 import Contact from "../components/contact";
 import Photos from "../components/photos";
+
+
+const searchClient = algoliasearch(
+  "6TEH88KU64",
+  "ec5a05bc4ec2a8f2340af7fcc558591f"
+)
 
 const IndexPage = ({ data }) => (
   <Layout header="home">
@@ -32,6 +47,11 @@ const IndexPage = ({ data }) => (
       .map(t => {
         return <Service data={data.allContentfulService}></Service>;
       })}
+
+    {/* <InstantSearch searchClient={searchClient} indexName="blakegreendev">
+      <SearchBox />
+      <Hits hitComponent={Search}/>
+    </InstantSearch> */}
 
     {data.contentfulSiteInformation.menus
       .filter(item => item === "Blogs")

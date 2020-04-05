@@ -6,22 +6,28 @@ if (process.env.ENVIRONMENT !== "production") {
 
 const { spaceId, accessToken } = process.env;
 
-// const myQuery = `{
-//   contentfulBlogs {
-//     title
-//     description {
-//       description
-//     }
-//     date
-//   }
-// }`;
+const myQuery = `
+  {
+    allContentfulBlogs {
+      edges {
+        node {
+          title
+          date
+          description {
+            description
+          }
+        }
+      }
+    }
+  }
+`
 
-// const queries = [
-//   {
-//     query: myQuery,
-//     transformer: ({ data }) => data.contentfulBlogs
-//   }
-// ];
+const queries = [
+  {
+    query: myQuery,
+    transformer: ({ data }) => data.allContentfulBlogs.edges.map(({ node }) => node)
+  }
+];
 
 module.exports = {
   siteMetadata: {
@@ -46,16 +52,16 @@ module.exports = {
         trackingId: "UA-162743629-1",
       },
     },
-    // {
-    //   resolve: `gatsby-plugin-algolia`,
-    //   options: {
-    //     appId: `6TEH88KU64`,
-    //     apiKey: `44111bda46119052557b9e869f165a09`,
-    //     indexName: `blakegreendev`, // for all queries
-    //     queries,
-    //     chunkSize: 1000, // default: 1000
-    //   },
-    // },
+    {
+      resolve: `gatsby-plugin-algolia`,
+      options: {
+        appId: `6TEH88KU64`,
+        apiKey: `9f3467851631d4d68449c20748a1e1fe`,
+        indexName: `blakegreendev`, // for all queries
+        queries,
+        chunkSize: 1000, // default: 1000
+      },
+    },
     {
       resolve: `gatsby-transformer-remark`,
       options: {
@@ -83,6 +89,7 @@ module.exports = {
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     `gatsby-plugin-sitemap`,
+    `gatsby-plugin-styled-components`,
     `gatsby-transformer-remark`,
     {
       resolve: `gatsby-plugin-manifest`,
