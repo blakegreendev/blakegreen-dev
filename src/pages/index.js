@@ -4,14 +4,6 @@ import { graphql } from "gatsby";
 import Layout from "../components/layout";
 import SEO from "../components/seo";
 
-import algoliasearch from "algoliasearch/lite"
-import {
-  InstantSearch,
-  SearchBox,
-  Hits,
-  Highlight,
-} from "react-instantsearch-dom"
-
 import Banner from "../components/banner";
 import About from "../components/about";
 import Service from "../components/service";
@@ -22,11 +14,6 @@ import Testimonial from "../components/testimonial";
 import Contact from "../components/contact";
 import Photos from "../components/photos";
 
-
-const searchClient = algoliasearch(
-  "6TEH88KU64",
-  "ec5a05bc4ec2a8f2340af7fcc558591f"
-)
 
 const IndexPage = ({ data }) => (
   <Layout header="home">
@@ -146,7 +133,10 @@ export const pageQuery = graphql`
         }
       }
     }
-    allContentfulBlogs(limit: 5) {
+    allContentfulBlogs(
+      limit: 5
+      sort: { fields: [date], order: DESC }
+      ) {
       edges {
         node {
           title
@@ -163,7 +153,7 @@ export const pageQuery = graphql`
             }
           }
           createdAt
-          date
+          date(formatString: "DD MMMM, YYYY")
         }
       }
     }

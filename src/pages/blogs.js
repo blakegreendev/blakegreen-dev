@@ -38,6 +38,7 @@ export default class Blogs extends Component {
                           <i className="fas fa-calendar-alt"></i>{" "}
                           {moment(item.node.date).format("LL")}
                         </span>
+                        {/* TODO this is where I should add tags */}
                       </div>
                     </div>
                   </li>
@@ -53,7 +54,9 @@ export default class Blogs extends Component {
 
 export const pageQuery = graphql`
   query BlogsQuery {
-    allContentfulBlogs {
+    allContentfulBlogs(
+      sort: { fields: [date], order: DESC }
+    ){
       edges {
         node {
           title
@@ -70,7 +73,7 @@ export const pageQuery = graphql`
             }
           }
           createdAt
-          date
+          date(formatString: "DD MMMM, YYYY")
         }
       }
     }
