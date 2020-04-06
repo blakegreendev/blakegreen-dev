@@ -33,7 +33,7 @@ module.exports = {
     //   resolve: `gatsby-plugin-algolia`,
     //   options: {
     //     appId: `6TEH88KU64`,
-    //     apiKey: `9f3467851631d4d68449c20748a1e1fe`,
+    //     apiKey:   // Changed for Env variables with Amplify
     //     indexName: `blakegreendev`, // for all queries
     //     queries,
     //     chunkSize: 1000, // default: 1000
@@ -60,7 +60,7 @@ module.exports = {
       resolve: "gatsby-source-contentful",
       options: {
         spaceId: `chprka9u25r7`,
-        accessToken: `akTLSr8UelkrDBxn4yz-vQle53VwzriQ4fLQFr4BPSo`
+        accessToken: process.env.GATSBY_CONTENTFUL_ACCESSTOKEN
       }
     },
     `gatsby-transformer-sharp`,
