@@ -9,7 +9,7 @@ import About from "../components/about";
 import Service from "../components/service";
 import Work from "../components/work";
 import Blogs from "../components/blogs";
-import Search from "../components/search";
+// import Search from "../components/search";
 import Testimonial from "../components/testimonial";
 import Contact from "../components/contact";
 import Photos from "../components/photos";

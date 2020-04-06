@@ -8,7 +8,7 @@ h2{font-size:28px;line-height:34px;color:#363636}
 h3{font-size:22px}
 h4{font-size:18px}
 h5{font-size:10px}
-p{font-size:14px}
+p{font-size:18px}
 .banner{position:relative;height:100vh}
 a:hover{color:#d83d0a;text-decoration:underline}
 .banner .banner-details{position:absolute;top:50%;left:50%;z-index:9;display:flex;justify-content:center;align-items:center;flex-direction:column;transform:translate(-50%,-50%);-webkit-transform:translate(-50%,-50%);-moz-transform:translate(-50%,-50%);-ms-transform:translate(-50%,-50%);-o-transform:translate(-50%,-50%);width:90%;color:#fff}
@@ -86,6 +86,7 @@ form>div{margin-bottom:15px}
 .blogs-list .item .inner .details .title{margin-bottom:5px;text-shadow:1px 1px 4px #333}
 .blogs-list .item .inner .details .title a{color:#fff;font-size:24px;text-shadow:1px 1px 4px #333;text-decoration:none}
 .blogs-list .item .inner .details .date{display:block;margin-bottom:0;text-shadow:1px 1px 4px #333}
+.blogs-list .item .inner .details .tags{display:block;margin-bottom:0;text-shadow:1px 1px 4px #333}
 .blogs-list .item .inner .details p{margin-bottom:0}
 .blogs-list .item .inner:after{content:"";position:absolute;top:0;bottom:0;left:0;right:0;width:100%;height:100%;background:#3333339c}
 .blogs-list .item:nth-child(1),
@@ -160,8 +161,8 @@ h2:after,
     0%{opacity:0;-webkit-transform:scale3d(0.3,0.3,0.3);transform:scale3d(0.3,0.3,0.3)}
     50%{opacity:1}
 }
-.blog-post .details .title{font-size:26px;margin-bottom:20px}
-.blog-post .details .date{font-size:14px;margin-bottom:30px}
+.blog-post .details .title{font-size:28px;margin-bottom:20px}
+.blog-post .details .date{font-size:16px;margin-bottom:30px}
 .blog-post .details h2{font-size:22px;line-height:26px;margin-bottom:20px}
 .blog-post .details h3{font-size:18px}
 .blog-post .details h4{font-size:16px}
