@@ -6,29 +6,6 @@ if (process.env.ENVIRONMENT !== "production") {
 
 const { spaceId, accessToken } = process.env;
 
-const myQuery = `
-  {
-    allContentfulBlogs {
-      edges {
-        node {
-          title
-          date
-          description {
-            description
-          }
-        }
-      }
-    }
-  }
-`
-
-const queries = [
-  {
-    query: myQuery,
-    transformer: ({ data }) => data.allContentfulBlogs.edges.map(({ node }) => node)
-  }
-];
-
 module.exports = {
   siteMetadata: {
     title: `Blake Green`,
@@ -52,16 +29,16 @@ module.exports = {
         trackingId: "UA-162743629-1",
       },
     },
-    {
-      resolve: `gatsby-plugin-algolia`,
-      options: {
-        appId: `6TEH88KU64`,
-        apiKey: `9f3467851631d4d68449c20748a1e1fe`,
-        indexName: `blakegreendev`, // for all queries
-        queries,
-        chunkSize: 1000, // default: 1000
-      },
-    },
+    // {
+    //   resolve: `gatsby-plugin-algolia`,
+    //   options: {
+    //     appId: `6TEH88KU64`,
+    //     apiKey: `9f3467851631d4d68449c20748a1e1fe`,
+    //     indexName: `blakegreendev`, // for all queries
+    //     queries,
+    //     chunkSize: 1000, // default: 1000
+    //   },
+    // },
     {
       resolve: `gatsby-transformer-remark`,
       options: {

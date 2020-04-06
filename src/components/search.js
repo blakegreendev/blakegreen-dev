@@ -3,6 +3,29 @@ import { Link } from "gatsby"
 import { Highlight } from "react-instantsearch-dom"
 import { rhythm } from "../utils/typography"
 
+const myQuery = `
+  {
+    allContentfulBlogs {
+      edges {
+        node {
+          title
+          date
+          description {
+            description
+          }
+        }
+      }
+    }
+  }
+`
+
+const queries = [
+  {
+    query: myQuery,
+    transformer: ({ data }) => data.allContentfulBlogs.edges.map(({ node }) => node)
+  }
+];
+
 const Search = ({ hit }) => {
   return (
     <div>
