@@ -22,7 +22,11 @@ export default class blogPost extends Component {
       title: data.title,
       slug: data.slug
     };
-
+    const style = {
+      padding: '5px',
+      border: '2px solid'
+    };
+    let output = data.tags.map(e => e.split(' ').map(f => <span style= {style}> {f} </span>));
     return (
       <Layout>
         <SEO
@@ -52,6 +56,10 @@ export default class blogPost extends Component {
                   __html: data.description.childMarkdownRemark.html
                 }}
               />
+              <div className="tags">
+                <i className="fas fa-tags"></i>{" "}
+                {output}
+              </div>
             </div>
             <Share
               socialConfig={{
@@ -93,6 +101,7 @@ export const pageQuery = graphql`
       }
       createdAt
       date
+      tags
     }
     contentfulSiteInformation {
       siteUrl

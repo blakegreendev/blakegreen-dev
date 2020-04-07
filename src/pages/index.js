@@ -154,6 +154,7 @@ export const pageQuery = graphql`
           }
           createdAt
           date(formatString: "DD MMMM, YYYY")
+          tags
         }
       }
     }

@@ -10,7 +10,9 @@ export default class Blogs extends Component {
       <div className="blogs-section section" id="Blogs">
         <div className="container">
           <div className="section-head">
-            <h2>Latest Blogs</h2>
+            <Link to="/blogs">
+              <h2>Latest Blogs</h2>
+            </Link>
           </div>
           <ul className="blogs-list">
             {data.edges.map((item, index) => {

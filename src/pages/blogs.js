@@ -38,7 +38,10 @@ export default class Blogs extends Component {
                           <i className="fas fa-calendar-alt"></i>{" "}
                           {moment(item.node.date).format("LL")}
                         </span>
-                        {/* TODO this is where I should add tags */}
+                        {/* <span className="tags">
+                          <i className="fas fa-tags"></i>{" "}
+                          {output}
+                        </span> */}
                       </div>
                     </div>
                   </li>
@@ -74,8 +77,10 @@ export const pageQuery = graphql`
           }
           createdAt
           date(formatString: "DD MMMM, YYYY")
+          tags
         }
       }
     }
   }
 `;
+
