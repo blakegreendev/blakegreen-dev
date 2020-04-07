@@ -1,5 +1,6 @@
 import React from "react";
 import Img from "gatsby-image";
+import { Link } from "gatsby";
 
 const Header = ({ data }) => (
   <div className="about section" id="About">
@@ -23,6 +24,11 @@ const Header = ({ data }) => (
                 __html: data.description.childMarkdownRemark.html
               }}
             />
+            <div className="see-more">
+              <Link to="/aboutme">
+                <span>More about my journey...</span>
+              </Link>
+            </div>
             <ul className="details">
               <li>
                 <strong>Full Name</strong>
