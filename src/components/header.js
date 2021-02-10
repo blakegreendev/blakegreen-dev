@@ -76,11 +76,11 @@ export default class Header extends Component {
                     })}
 
                   {data.menus
-                    .filter(item => item === "Work")
+                    .filter(item => item === "Projects")
                     .map(t => {
                       return (
                         <li>
-                          <Link to={`/#Work`}>Work</Link>
+                          <Link to={`/projects`}>Projects</Link>
                         </li>
                       );
                     })}
@@ -131,6 +131,15 @@ export default class Header extends Component {
                       return (
                         <li>
                           <Link to="/blogs">Blogs</Link>
+                        </li>
+                      );
+                    })}
+                  {data.menus
+                    .filter(item => item === "Projects")
+                    .map(t => {
+                      return (
+                        <li>
+                          <Link to="/projects">Projects</Link>
                         </li>
                       );
                     })}
