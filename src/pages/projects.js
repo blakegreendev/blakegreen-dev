@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import { graphql } from "gatsby";
-import Img from "gatsby-image";
 import { Link } from "gatsby";
 import moment from "moment";
 
@@ -22,26 +21,17 @@ export default class Projects extends Component {
               <h1 className="line-heading h2">Projects</h1>
             </div>
             <ul className="projects-list">
-              {data.allContentfulBlogs.edges.map((item, index) => {
+              {data.allContentfulProjects.edges.map((item, index) => {
                 return (
                   <li key={index} className="item">
                     <div className="inner">
-                      <Link className="link" to={item.node.slug} />
-                      <Img
-                        fixed={item.node.featureImage.fluid}
-                        objectFit="cover"
-                        objectPosition="50% 50%"
-                      />
                       <div className="details">
                         <h3 className="title">{item.node.title}</h3>
+                        <p>{item.node.description}</p>
                         <span className="date">
                           <i className="fas fa-calendar-alt"></i>{" "}
                           {moment(item.node.date).format("LL")}
                         </span>
-                        {/* <span className="tags">
-                          <i className="fas fa-tags"></i>{" "}
-                          {output}
-                        </span> */}
                       </div>
                     </div>
                   </li>
@@ -56,28 +46,16 @@ export default class Projects extends Component {
 }
 
 export const pageQuery = graphql`
-  query BlogsQuery {
-    allContentfulBlogs(
+  query ProjectsQuery {
+    allContentfulProjects(
       sort: { fields: [date], order: DESC }
     ){
       edges {
         node {
           title
           slug
-          featureImage {
-            fluid(maxWidth: 1500) {
-              base64
-              aspectRatio
-              src
-              srcSet
-              srcWebp
-              srcSetWebp
-              sizes
-            }
-          }
           createdAt
           date(formatString: "DD MMMM, YYYY")
-          tags
         }
       }
     }

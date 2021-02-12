@@ -57,15 +57,6 @@ export default class Header extends Component {
                       );
                     })}
                   {data.menus
-                    .filter(item => item === "Service")
-                    .map(t => {
-                      return (
-                        <li>
-                          <Link to={`/#Service`}>Service</Link>
-                        </li>
-                      );
-                    })}
-                  {data.menus
                     .filter(item => item === "Blogs")
                     .map(t => {
                       return (
@@ -85,20 +76,11 @@ export default class Header extends Component {
                       );
                     })}
                   {data.menus
-                    .filter(item => item === "Testimonials")
+                    .filter(item => item === "Streams")
                     .map(t => {
                       return (
                         <li>
-                          <Link to={`/#Testimonials`}>Testimonials</Link>
-                        </li>
-                      );
-                    })}
-                  {data.menus
-                    .filter(item => item === "Photos")
-                    .map(t => {
-                      return (
-                        <li>
-                          <Link to={`/#Photos`}>Photos</Link>
+                          <Link to={`/streams`}>Streams</Link>
                         </li>
                       );
                     })}
@@ -144,11 +126,11 @@ export default class Header extends Component {
                       );
                     })}
                   {data.menus
-                    .filter(item => item === "Photos")
+                    .filter(item => item === "Streams")
                     .map(t => {
                       return (
                         <li>
-                          <Link to="/photos">Photos</Link>
+                          <Link to="/streams">Streams</Link>
                         </li>
                       );
                     })}

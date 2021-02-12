@@ -12,7 +12,7 @@ const Share = ({ socialConfig }) => {
         url={socialConfig.config.url}
         className="button is-outlined is-rounded twitter"
         title={socialConfig.config.title}
-        via="tsgt_green"
+        via="blakgreendev"
       >
         <span className="icon">
           <i className="fab fa-twitter"></i>
