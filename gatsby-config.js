@@ -11,7 +11,7 @@ module.exports = {
     title: `Blake Green`,
     description: `Cloud Architect`,
     siteUrl: `https://blakegreen.dev`,
-    author: `@tsgt_green`
+    author: `@blakegreendev`
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -29,16 +29,6 @@ module.exports = {
         trackingId: "UA-162743629-1",
       },
     },
-    // {
-    //   resolve: `gatsby-plugin-algolia`,
-    //   options: {
-    //     appId: `6TEH88KU64`,
-    //     apiKey:   // Changed for Env variables with Amplify
-    //     indexName: `blakegreendev`, // for all queries
-    //     queries,
-    //     chunkSize: 1000, // default: 1000
-    //   },
-    // },
     {
       resolve: `gatsby-transformer-remark`,
       options: {
