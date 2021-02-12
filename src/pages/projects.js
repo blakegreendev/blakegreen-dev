@@ -13,21 +13,24 @@ export default class Projects extends Component {
       <Layout>
         <SEO
           title="Projects"
-          keywords={[`Blake Green`, `Cloud Architect`, `Blogs`]}
+          keywords={[`Blake Green`, `Cloud Architect`, `Projects`]}
         />
-        <div className="site-container blogs-page" id="Blogs">
+        <div className="work section" id="Work">
           <div className="container">
             <div className="section-head">
               <h1 className="line-heading h2">Projects</h1>
             </div>
-            <ul className="projects-list">
+            <ul className="work-list">
               {data.allContentfulProjects.edges.map((item, index) => {
                 return (
                   <li key={index} className="item">
                     <div className="inner">
+                      <Link className="link" to={item.node.link} />
                       <div className="details">
-                        <h3 className="title">{item.node.title}</h3>
-                        <p>{item.node.description}</p>
+                        <a href={item.node.link} target="_blank" rel="noreferrer">
+                          <h2 className="title">{item.node.title}</h2>
+                          <p>{item.node.description}</p>
+                        </a>
                         <span className="date">
                           <i className="fas fa-calendar-alt"></i>{" "}
                           {moment(item.node.date).format("LL")}
@@ -53,6 +56,8 @@ export const pageQuery = graphql`
       edges {
         node {
           title
+          description
+          link 
           slug
           createdAt
           date(formatString: "DD MMMM, YYYY")

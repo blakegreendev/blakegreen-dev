@@ -1,39 +1,33 @@
 import React, { Component } from "react";
 import { graphql } from "gatsby";
-import Img from "gatsby-image";
-import { Link } from "gatsby";
+// import { Link } from "gatsby";
 import moment from "moment";
 
 import Layout from "../components/layout";
 import SEO from "../components/seo";
 
-export default class Blogs extends Component {
+export default class Streams extends Component {
   render() {
     const { data } = this.props;
     return (
       <Layout>
         <SEO
-          title="Blogs"
-          keywords={[`Blake Green`, `Cloud Architect`, `Blogs`]}
+          title="Streams"
+          keywords={[`Blake Green`, `Cloud Architect`, `Streams`]}
         />
         <div className="site-container blogs-page" id="Blogs">
           <div className="container">
             <div className="section-head">
-              <h1 className="line-heading h2">Blogs</h1>
+              <h1 className="line-heading h2">Streams</h1>
             </div>
             <ul className="blogs-list">
-              {data.allContentfulBlogs.edges.map((item, index) => {
+              {data.allContentfulStreams.edges.map((item, index) => {
                 return (
                   <li key={index} className="item">
                     <div className="inner">
-                      <Link className="link" to={item.node.slug} />
-                      <Img
-                        fixed={item.node.featureImage.fluid}
-                        objectFit="cover"
-                        objectPosition="50% 50%"
-                      />
                       <div className="details">
                         <h3 className="title">{item.node.title}</h3>
+                        <p>{item.node.description}</p>
                         <span className="date">
                           <i className="fas fa-calendar-alt"></i>{" "}
                           {moment(item.node.date).format("LL")}
@@ -50,33 +44,21 @@ export default class Blogs extends Component {
     );
   }
 }
-
+// https://www.gatsbyjs.com/docs/data-fetching/#fetching-data-at-client-side-runtime
+// https://www.youtube.com/watch?v=8YWrmZoUYGs&t=136s
 export const pageQuery = graphql`
-  query BlogsQuery {
-    allContentfulBlogs(
+  query StreamsQuery {
+    allContentfulProjects(
       sort: { fields: [date], order: DESC }
     ){
       edges {
         node {
           title
           slug
-          featureImage {
-            fluid(maxWidth: 1500) {
-              base64
-              aspectRatio
-              src
-              srcSet
-              srcWebp
-              srcSetWebp
-              sizes
-            }
-          }
           createdAt
           date(formatString: "DD MMMM, YYYY")
-          tags
         }
       }
     }
   }
 `;
-
