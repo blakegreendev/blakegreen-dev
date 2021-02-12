@@ -39,10 +39,7 @@ https://blakegreen.dev
     contentful space --space-id <CONTENTFUL_SPACE_ID> import --content-file contentful-data.json
     ```
     
-    Checkout Rohit's below blog how to Import and Export data from ContentFul
-    
-    [https://rohitgupta.design/import-and-export-data-with-contentful-cli](https://rohitgupta.design/import-and-export-data-with-contentful-cli)
-
+    Checkout Rohit's 
 1.  **Start developing.**
 
     Navigate into your new site’s directory and start it up.
