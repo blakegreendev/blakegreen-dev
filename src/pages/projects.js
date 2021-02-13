@@ -29,7 +29,10 @@ export default class Projects extends Component {
                       <div className="details">
                         <a href={item.node.link} target="_blank" rel="noreferrer">
                           <h2 className="title">{item.node.title}</h2>
-                          <p>{item.node.description}</p>
+                        </a>
+                        <p>{item.node.description}</p>
+                        <a href={item.node.demo} target="_blank" rel="noreferrer">
+                          <h4 className="demo">Demo</h4>
                         </a>
                         <span className="date">
                           <i className="fas fa-calendar-alt"></i>{" "}
@@ -57,6 +60,7 @@ export const pageQuery = graphql`
         node {
           title
           description
+          demo
           link 
           slug
           createdAt
